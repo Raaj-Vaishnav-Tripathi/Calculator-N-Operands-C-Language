@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <stdio.h>//Only one library required.
 
 int main()
 {
-    char operator;
-    int n, i;
-    double extra = 0;
+    char operator;//For taking the Operator input in character variable.
+    int n, i;//For the size of Operand array and i for iteration of loop.
+    double extra = 0;//For saving the 
     printf("Enter an operator (+, -, *, /): ");
     scanf("%c", &operator);
 
@@ -90,35 +90,3 @@ int main()
     }
     return 0;
 }
-
-// #include <stdio.h>
-
-// int main() {
-
-//   char op;
-//   double first, second;
-//   printf("Enter an operator (+, -, *, /): ");
-//   scanf("%c", &op);
-//   printf("Enter two operands: ");
-//   scanf("%lf %lf", &first, &second);
-
-//   switch (op) {
-//     case '+':
-//       printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
-//       break;
-//     case '-':
-//       printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
-//       break;
-//     case '*':
-//       printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
-//       break;
-//     case '/':
-//       printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
-//       break;
-//     // operator doesn't match any case constant
-//     default:
-//       printf("Error! operator is not correct");
-//   }
-
-//   return 0;
-// }
