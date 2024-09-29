@@ -1,5 +1,46 @@
-# Calculator-N-Operands_C_Language
-This is completely C language based Project which can perform 4 major operations of basic Calculator which are:- Addition , Subtraction, Division &amp; Multiplication.
-The main difference is that it can take the number of operands input by the user &amp; it can then perform the selected operation on all operands provided till the nth
-operand. I just took the number of Operands input by user in integer variable "n" and then created a array named Operands of size "n". Then I used Switch cases for all
-four Arithematic operations :- +, -, *, /. I also used for loops inside all switch cases for iterating every operands in Operand array and used some conditional statements.
+# Calculator-N-Operands (C)
+
+## Overview
+This project implements a dynamic calculator using C that can perform four major arithmetic operations—addition, subtraction, multiplication, and division—on a user-specified number of operands. The program efficiently processes the input through loops and switch cases to perform the chosen operation.
+
+## Features
+- **Multiple operand support**: Users can specify the number of operands to be processed.
+- **Basic arithmetic operations**: Includes addition (+), subtraction (-), multiplication (*), and division (/).
+- **Efficient code structure**: Uses switch cases and loops to handle different operations and operands.
+
+## How It Works
+1. The user inputs the number of operands (`n`).
+2. The operands are stored in a dynamically created array.
+3. Depending on the operation chosen by the user, the calculator performs the operation across all operands.
+
+## Time and Space Complexity
+- **Time Complexity**:  
+  - Input Reading: O(n)  
+  - Initialization: O(n)  
+  - Operation Execution: O(n-1)  
+  - Overall: O(n)
+
+- **Space Complexity**:  
+  - Operand storage: O(n)  
+  - Additional variables: O(1)  
+  - Overall: O(n)
+
+## Prerequisites
+- Basic knowledge of C programming.
+- C compiler (e.g., GCC or any IDE with C support).
+
+## Contributing
+You are welcome to contribute by:
+- Adding more complex operations such as modulus (%) or exponentiation.
+- Improving performance for larger datasets.
+
+## License
+This project is free for use and distribution. Feel free to modify and share.
+
+## Example Usage
+```c
+Enter an operator (+, -, *, /): *
+Enter Number of Operands: 3
+Enter 3 operands below:
+2 4 5
+2 x 4 x 5 = 40
